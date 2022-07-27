@@ -1,13 +1,9 @@
-import Head from 'next/head';
-import Image from 'next/image';
 import Layout from '../components/layout';
+import StrapiClient from '../lib/strapi-client';
 
 export default function Home() {
 	return (
-		<Layout
-		// categories={categories}
-		// img={homepage.attributes.sideImg.data.attributes.url}
-		>
+		<Layout>
 			<div className="section">
 				<div className="container intro">
 					<div className="intro-container">
@@ -20,3 +16,13 @@ export default function Home() {
 		</Layout>
 	);
 }
+const strapiClient = new StrapiClient();
+
+export const getStaticProps = async () => {
+	const allArticles = await strapiClient.fetchData('/api/articles');
+	return {
+		props: {
+			articles: allArticles,
+		},
+	};
+};

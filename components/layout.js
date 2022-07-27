@@ -4,7 +4,7 @@ const Layout = ({ children, img, categories, seo }) => (
 			<div
 				className="roses"
 				style={{
-					backgroundImage: `url(${img})`,
+					backgroundImage: `url(${process.env.PUBLIC_URL + '/roses.png'})`,
 				}}
 			></div>
 			{children}

@@ -9,6 +9,12 @@ class MyDocument extends Document {
 						rel="stylesheet"
 						href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
 					/>
+					<link
+						rel="icon"
+						type="image/png"
+						sizes="32x32"
+						href="/fullstakk_favicon.png"
+					/>
 				</Head>
 				<body>
 					<Main />
