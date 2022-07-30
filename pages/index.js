@@ -55,7 +55,7 @@ const Home = ({ articles, categories }) => {
               >
                 LinkedIn
               </a>
-              . Looking forward to hear from you! Here's my tech stack so far:
+              . Looking forward to hear from you! This is my tech stack so far:
             </p>
           </div>
           <div className="skills">
