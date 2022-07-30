@@ -5,7 +5,6 @@ import Layout from "../../components/layout";
 import NextImage from "../../components/image";
 import { getStrapiMedia } from "../../lib/media";
 import { useRouter } from "next/router";
-import Image from "next/image";
 
 const Article = ({ article, categories, homepage }) => {
   const imageUrl = getStrapiMedia(article.attributes.image);
@@ -30,10 +29,10 @@ const Article = ({ article, categories, homepage }) => {
               <h1>{article.attributes.title}</h1>
             </div>
           </header>
-          <ReactMarkdown>{article.attributes.content}</ReactMarkdown>
+          <ReactMarkdown children={article.attributes.content} />
           <div>
             {article.attributes.author.data.attributes.picture && (
-              <Image
+              <img
                 src={getStrapiMedia(
                   article.attributes.author.data.attributes.picture
                 )}
@@ -59,7 +58,7 @@ const Article = ({ article, categories, homepage }) => {
           </div>
 
           <main className="content">
-            <ReactMarkdown>{article.attributes.content}</ReactMarkdown>
+            <ReactMarkdown children={article.attributes.content} />
           </main>
         </div>
       </div>
