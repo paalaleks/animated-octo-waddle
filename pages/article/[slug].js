@@ -29,7 +29,7 @@ const Article = ({ article, categories, homepage }) => {
               <h1>{article.attributes.title}</h1>
             </div>
           </header>
-          <ReactMarkdown children={article.attributes.content} />
+          <ReactMarkdown>{article.attributes.content}</ReactMarkdown>
           <div>
             {article.attributes.author.data.attributes.picture && (
               <img

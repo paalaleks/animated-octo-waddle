@@ -27,6 +27,7 @@ const Home = ({ articles, categories }) => {
               <a
                 className="classic-link"
                 target="_blank"
+                rel="noreferrer"
                 href="https://github.com/paalaleks"
               >
                 Github
@@ -49,6 +50,7 @@ const Home = ({ articles, categories }) => {
               <a
                 className="classic-link"
                 target="_blank"
+                rel="noreferrer"
                 href="https://www.linkedin.com/in/fullstakk/"
               >
                 LinkedIn
