@@ -160,7 +160,7 @@ label {
   }
   @media only screen and (max-width: 860px) {
     max-width: unset;
-    padding: 1rem 1rem 0 1rem;
+    padding: 1rem 0.75rem 0 1rem;
   }
   @media only screen and (max-width: 350px) {
     padding: 10px 10px 0 10px;
@@ -181,32 +181,24 @@ label {
   }
 }
 
-.logo {
-  background-repeat: no-repeat;
-  height: 262px;
-  width: 716px;
-  @media only screen and (max-width: 700px) {
+.logo-container_1 {
+  padding: 0 1rem;
+  margin-bottom: 0.5rem;
+  @media only screen and (max-width: 625px) {
     display: none;
   }
 }
-
-.logo_2 {
-  background-repeat: no-repeat;
-  height: 212px;
-  width: 445px;
-  position: relative;
-  width: 100%;
+.logo-container_2 {
+  padding: 0.5rem 1rem 0.5rem 0;
   margin: auto;
-  padding: 0 1rem 0 0;
   display: none;
-  z-index: 2;
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 625px) {
     display: block;
   }
   @media only screen and (max-width: 350px) {
-    padding: 0 6px;
   }
 }
+
 .mini-badge {
   padding: 2px 4px;
   background: $color1;
@@ -236,14 +228,8 @@ label {
   background-position: center;
   height: 2rem;
   background-size: contain;
-
-  img {
-    width: 33px;
-    // animation: spin 2s linear infinite;
-
-    @media only screen and (max-width: 576px) {
-      width: 24px;
-    }
+  @media only screen and (max-width: 576px) {
+    height: 1.5rem;
   }
 }
 
@@ -258,12 +244,12 @@ label {
     margin-bottom: 2rem;
     text-align: left;
     @media only screen and (max-width: 576px) {
-      padding-right: 8px;
+      padding-right: 0.5rem;
     }
 
-    @media only screen and (max-width: 350px) {
-      padding: 0 0 0 8px;
-    }
+    // @media only screen and (max-width: 350px) {
+    //   padding: 0 0 0 8px;
+    // }
   }
 
   @media only screen and (max-width: 350px) {
@@ -364,6 +350,7 @@ label {
       padding-bottom: 0.5rem;
     }
     p {
+      // text-align: center;
       margin-top: 0.5rem;
     }
 

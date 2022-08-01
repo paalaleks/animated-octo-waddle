@@ -2,6 +2,8 @@ import Layout from "../components/layout";
 import { fetchAPI } from "../lib/api";
 import Articles from "../components/articles";
 import Link from "next/link";
+import Logo_l from "../components/logo_l";
+import Logo_s from "../components/logo_s";
 
 const Home = ({ articles, categories }) => {
   return (
@@ -9,18 +11,13 @@ const Home = ({ articles, categories }) => {
       <div className="section">
         <div className="container intro">
           <div className="intro-container">
-            <div
-              className="logo"
-              style={{
-                backgroundImage: `url(${"/paal.svg"})`,
-              }}
-            ></div>
-            <div
-              className="logo_2"
-              style={{
-                backgroundImage: `url(${"/paal_2.svg"})`,
-              }}
-            ></div>
+            <div className="logo-container_1">
+              <Logo_l />
+            </div>
+            <div className="logo-container_2">
+              <Logo_s />
+            </div>
+
             <p>
               Farmer boy and railroadworker from Telemark looking for a job in
               tech. Check out{" "}
@@ -39,7 +36,7 @@ const Home = ({ articles, categories }) => {
               >
                 artwork
               </a>
-              .Get in touch by{" "}
+              . Get in touch by{" "}
               <a
                 className="classic-link"
                 href="mailto:paalaleks@hotmail.com?subject=Message%20via%20fullstakk.as"
@@ -61,8 +58,6 @@ const Home = ({ articles, categories }) => {
           <div className="skills">
             <p className="code">
               {categories.map((skill, i) => {
-                // console.log(skill.attributes.articles.data.length > 0)
-
                 if (
                   skill.attributes.type === "code" &&
                   skill.attributes.articles.data.length > 0
