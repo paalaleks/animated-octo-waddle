@@ -32,7 +32,7 @@ const Home = ({ articles, categories }) => {
               to see some of my code. I also want to show you my{" "}
               <a
                 className="classic-link"
-                href="http://www.fullstakk.as/article/artwork"
+                href="https://www.fullstakk.as/artwork"
               >
                 artwork
               </a>

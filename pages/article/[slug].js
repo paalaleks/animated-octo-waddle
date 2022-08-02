@@ -2,14 +2,12 @@ import ReactMarkdown from "react-markdown";
 import Moment from "react-moment";
 import { fetchAPI } from "../../lib/api";
 import Layout from "../../components/layout";
-import NextImage from "../../components/image";
 import { getStrapiMedia } from "../../lib/media";
 import { useRouter } from "next/router";
 import Image from "next/image";
 
-const Article = ({ article, categories, homepage }) => {
+const Article = ({ article, categories }) => {
   const imageUrl = getStrapiMedia(article.attributes.image);
-  // console.log(article);
 
   const router = useRouter();
 

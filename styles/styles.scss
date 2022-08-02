@@ -122,6 +122,30 @@ label {
   margin: 8px 0;
 }
 
+.topbar {
+  padding-left: 2rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: $color3;
+  height: 4rem;
+
+  .fa-xmark {
+    margin-left: auto;
+    margin-right: 1rem;
+    padding: 0.5rem;
+    font-size: 22px;
+    cursor: pointer;
+
+    &:hover {
+      color: darken($color2, 10%);
+    }
+  }
+  @media only screen and (max-width: 350px) {
+    padding-left: 2rem;
+  }
+}
+
 .section {
   padding-left: 57px;
   padding-right: 57px;
@@ -139,6 +163,28 @@ label {
 .second-section {
   @media only screen and (max-width: 860px) {
     padding-left: unset;
+  }
+}
+
+.artwork-topbar {
+  h2 {
+    margin-left: auto;
+  }
+}
+
+.artwork-container {
+  max-width: 992px;
+  margin: 0 auto;
+  .image-container {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .portrait-image-container {
+    display: flex;
+  }
+  .portrait-image-container:last-of-type {
+    margin-bottom: 4rem;
   }
 }
 
@@ -315,30 +361,6 @@ label {
   }
 }
 
-.topbar {
-  padding-left: 2rem;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  background: $color3;
-  height: 4rem;
-
-  .fa-xmark {
-    margin-left: auto;
-    margin-right: 1rem;
-    padding: 0.5rem;
-    font-size: 22px;
-    cursor: pointer;
-
-    &:hover {
-      color: darken($color2, 10%);
-    }
-  }
-  @media only screen and (max-width: 350px) {
-    padding-left: 2rem;
-  }
-}
-
 .blog-excerpt {
   padding: 2.5rem 0;
   background: $color3;
@@ -416,6 +438,7 @@ label {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: bottom;
 }
 
 .content {
