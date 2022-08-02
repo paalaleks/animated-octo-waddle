@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  darkMode: true,
+  darkMode: false,
   reactStrictMode: true,
   swcMinify: true,
   images: {
