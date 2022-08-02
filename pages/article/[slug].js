@@ -9,7 +9,7 @@ import Image from "next/image";
 
 const Article = ({ article, categories, homepage }) => {
   const imageUrl = getStrapiMedia(article.attributes.image);
-  console.log(article);
+  // console.log(article);
 
   const router = useRouter();
 
@@ -96,18 +96,3 @@ export async function getStaticProps({ params }) {
 }
 
 export default Article;
-
-// export async function getStaticProps({ params }) {
-//   const articlesRes = await fetchAPI("/articles", {
-//     filters: {
-//       slug: params.slug,
-//     },
-//     populate: ["image", "category", "author.picture"],
-//   });
-//   const categoriesRes = await fetchAPI("/categories");
-
-//   return {
-//     props: { article: articlesRes.data[0], categories: categoriesRes },
-//     revalidate: 1,
-//   };
-// }
