@@ -19,7 +19,7 @@ const Artwork = () => {
             width={1528}
             height={1080}
           />
-          <p>&quot; Meeting trials" &quot;</p>
+          <p>'"; Meeting trials"'</p>
         </div>
         <div className="image-container">
           <Image
@@ -28,7 +28,7 @@ const Artwork = () => {
             width={1528}
             height={1080}
           />
-          <p>&quot; Examining scriptures carefully" &quot;</p>
+          <p>'"; Examining scriptures carefully"'</p>
         </div>
         <div className="image-container">
           <Image
@@ -37,7 +37,7 @@ const Artwork = () => {
             width={1528}
             height={1080}
           />
-          <p>&quot; Little delights; my favorite TV-show is on" &quot;</p>
+          <p>'"; Little delights; my favorite TV-show is on"'</p>
         </div>
         <div className="image-container">
           <Image
@@ -46,7 +46,7 @@ const Artwork = () => {
             width={1528}
             height={1023}
           />
-          <p>&quot; We have to continue onwards" &quot;</p>
+          <p>'"; We have to continue onwards"'</p>
         </div>
         <div className="portrait-image-container">
           <div className="image-container">
@@ -56,7 +56,7 @@ const Artwork = () => {
               width={1528}
               height={2095}
             />
-            <p>&quot; GPS navigated airbaloon mail" &quot;</p>
+            <p>'"; GPS navigated airbaloon mail"'</p>
           </div>
           <div className="image-container">
             <Image
@@ -65,7 +65,7 @@ const Artwork = () => {
               width={1528}
               height={2095}
             />
-            <p>&quot; Josef's cats" &quot;</p>
+            <p>'"; Josef's cats"'</p>
           </div>
         </div>
         <div className="portrait-image-container">
@@ -76,7 +76,7 @@ const Artwork = () => {
               width={1528}
               height={2161}
             />
-            <p>&quot; The Pearl" &quot;</p>
+            <p>'"; The Pearl"'</p>
           </div>
           <div className="image-container">
             <Image
@@ -85,7 +85,7 @@ const Artwork = () => {
               width={1528}
               height={2161}
             />
-            <p>&quot; Not far away from us" &quot;</p>
+            <p>'"; Not far away from us"'</p>
           </div>
         </div>
       </div>
