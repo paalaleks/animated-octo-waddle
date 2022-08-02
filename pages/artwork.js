@@ -19,7 +19,7 @@ const Artwork = () => {
             width={1528}
             height={1080}
           />
-          <p>{"Meeting trials"}</p>
+          <p>{`"Meeting trials"`}</p>
         </div>
         <div className="image-container">
           <Image
@@ -28,7 +28,7 @@ const Artwork = () => {
             width={1528}
             height={1080}
           />
-          <p>{"Examining scriptures carefully"}</p>
+          <p>{`"Examining scriptures carefully"`}</p>
         </div>
         <div className="image-container">
           <Image
@@ -37,7 +37,7 @@ const Artwork = () => {
             width={1528}
             height={1080}
           />
-          <p>{"Little delights; my favorite TV-show is on"}</p>
+          <p>{`"Little delights; my favorite TV-show is on"`}</p>
         </div>
         <div className="image-container">
           <Image
@@ -46,7 +46,7 @@ const Artwork = () => {
             width={1528}
             height={1023}
           />
-          <p>'"; We have to continue onwards"'</p>
+          <p>{`"We have to continue onwards"`}</p>
         </div>
         <div className="portrait-image-container">
           <div className="image-container">
@@ -56,7 +56,7 @@ const Artwork = () => {
               width={1528}
               height={2095}
             />
-            <p>{"GPS navigated airbaloon mail"}</p>
+            <p>{`"GPS navigated airbaloon mail"`}</p>
           </div>
           <div className="image-container">
             <Image
@@ -65,7 +65,7 @@ const Artwork = () => {
               width={1528}
               height={2095}
             />
-            <p>{"Josef's cats"}</p>
+            <p>{`"Josef's cats"`}</p>
           </div>
         </div>
         <div className="portrait-image-container">
@@ -76,7 +76,7 @@ const Artwork = () => {
               width={1528}
               height={2161}
             />
-            <p>{"The Pearl"}</p>
+            <p>{`"The Pearl"`}</p>
           </div>
           <div className="image-container">
             <Image
@@ -85,7 +85,7 @@ const Artwork = () => {
               width={1528}
               height={2161}
             />
-            <p>{"Not far away from us"}</p>
+            <p>{`"Not far away from us"`}</p>
           </div>
         </div>
       </div>
