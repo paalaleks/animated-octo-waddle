@@ -32,7 +32,7 @@ const Article = ({ article, categories, homepage }) => {
           </header>
           {console.log(article.attributes.content)}
           <ReactMarkdown>{article.attributes.content}</ReactMarkdown>
-          <div>
+          <div className="signature">
             {article.attributes.author.data.attributes.picture && (
               <Image
                 width={60}
@@ -51,14 +51,12 @@ const Article = ({ article, categories, homepage }) => {
                 }}
               />
             )}
-            <p className="">
-              By {article.attributes.author.data.attributes.name}
-            </p>
-            <p className="">
+            <span>By {article.attributes.author.data.attributes.name}</span>
+            <span>
               <Moment format="MMM Do YYYY">
                 {article.attributes.published_at}
               </Moment>
-            </p>
+            </span>
           </div>
         </div>
       </div>

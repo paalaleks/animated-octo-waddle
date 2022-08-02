@@ -6,8 +6,6 @@ import { useRouter } from "next/router";
 const Category = ({ category, categories, homepage }) => {
   const router = useRouter();
 
-  console.log(homepage);
-
   return (
     <Layout
       categories={categories.data}
@@ -17,7 +15,7 @@ const Category = ({ category, categories, homepage }) => {
         <i className="fa-solid fa-xmark" onClick={() => router.back()}></i>
       </div>
       <div className="section">
-        <div className="container">
+        <div className="category-container">
           <h1>{category.attributes.name}</h1>
           <Articles articles={category.attributes.articles.data} />
         </div>
