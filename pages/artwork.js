@@ -60,7 +60,7 @@ const Artwork = () => {
           </div>
           <div className="image-container">
             <Image
-              alt=""
+              alt="Josef's cats"
               src={"/artwork_josefskatter2.png"}
               width={1528}
               height={2095}
