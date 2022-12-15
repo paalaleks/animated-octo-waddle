@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "shoe_heroes",
+  "info": {
+    "singularName": "shoe-hero",
+    "pluralName": "shoe-heroes",
+    "displayName": "shoeHero"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "shoeHero": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
