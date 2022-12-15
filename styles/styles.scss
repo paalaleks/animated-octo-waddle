@@ -267,7 +267,7 @@ label {
 }
 
 .mini-badge {
-  padding: 2px 4px;
+  padding: 5px;
   background: $color1;
   color: $color3;
   font-size: 12px;
@@ -280,7 +280,7 @@ label {
 .badge-active {
   cursor: pointer;
   border-radius: 4px;
-  padding: 2px 4px;
+  padding: 5px;
   background: $color6;
   color: $color3;
 }
@@ -431,7 +431,6 @@ label {
 }
 
 .article-image {
-  display: flex;
   justify-content: center;
   align-items: center;
   height: 300px;
@@ -439,6 +438,14 @@ label {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
+  h1 {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: #201c17ba;
+  }
 }
 
 .content {
