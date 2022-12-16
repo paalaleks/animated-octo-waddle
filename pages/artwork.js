@@ -9,8 +9,8 @@ const Artwork = () => {
   return (
     <>
       <Head>
-        <title>Paal's artwork</title>
-        <meta name="Paal's artwork page" content="Paal Aleksander's artwork" />
+        <title>Paals artwork</title>
+        <meta name="Paals artwork page" content="Paal Aleksanders artwork" />
       </Head>
       <div className="topbar artwork-topbar">
         <h2>Artwork</h2>

@@ -1,7 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  darkMode: false,
-  reactStrictMode: true,
   swcMinify: true,
   images: {
     loader: "default",
