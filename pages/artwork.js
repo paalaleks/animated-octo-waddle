@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import Footer from "../components/footer";
@@ -7,6 +8,10 @@ const Artwork = () => {
 
   return (
     <>
+      <Head>
+        <title>Paal's artwork</title>
+        <meta name="Paal's artwork page" content="Paal Aleksander's artwork" />
+      </Head>
       <div className="topbar artwork-topbar">
         <h2>Artwork</h2>
         <i className="fa-solid fa-xmark" onClick={() => router.back()}></i>

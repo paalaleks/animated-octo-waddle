@@ -1,15 +1,17 @@
-import Articles from "../../components/articles";
 import { fetchAPI } from "../../lib/api";
 import Layout from "../../components/layout";
 import { useRouter } from "next/router";
+import Card from "../../components/card";
 
 const Category = ({ category, categories, homepage }) => {
   const router = useRouter();
 
   return (
     <Layout
+      pageContent="Here you can check all my work in one category"
+      pageTitle={`here you can check all my ${category.attributes.name} work`}
+      pageName={`Fullstakk AS – ${category.attributes.name}`}
       categories={categories.data}
-      // img={homepage.attributes.sideImg.data.attributes.url}
     >
       <div className="topbar">
         <i className="fa-solid fa-xmark" onClick={() => router.back()}></i>
@@ -17,7 +19,11 @@ const Category = ({ category, categories, homepage }) => {
       <div className="section">
         <div className="category-container">
           <h1>{category.attributes.name}</h1>
-          <Articles articles={category.attributes.articles.data} />
+          {category.attributes.articles.data.map((article, i) => {
+            return (
+              <Card article={article} key={`${article.attributes.slug}`} />
+            );
+          })}
         </div>
       </div>
     </Layout>

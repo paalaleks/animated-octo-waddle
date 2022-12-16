@@ -193,7 +193,6 @@ label {
   margin: 0 auto;
 
   p {
-    .classic-link,
     label,
     textarea,
     input {
@@ -204,6 +203,14 @@ label {
       }
     }
   }
+  .classic-link {
+    text-decoration: underline;
+    cursor: pointer;
+    &:hover {
+      color: $color1;
+    }
+  }
+
   @media only screen and (max-width: 860px) {
     max-width: unset;
     padding: 1rem 0.75rem 0 1rem;
@@ -384,11 +391,7 @@ label {
     &:hover > div {
       color: darken($color2, 10%);
     }
-    h2 {
-      text-align: left;
-      margin-top: 1.5rem;
-      padding-bottom: 0.5rem;
-    }
+
     p {
       margin-top: 0.5rem;
     }
@@ -405,6 +408,11 @@ label {
   }
 }
 
+h2 {
+  text-align: left;
+  margin-top: 1.5rem;
+  padding-bottom: 0.5rem;
+}
 .page-container {
   min-height: 100vh;
   position: relative;

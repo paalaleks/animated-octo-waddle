@@ -1,7 +1,13 @@
 import Footer from "./footer";
+import Head from "next/head";
 
-const Layout = ({ children }) => (
+const Layout = ({ children, pageTitle, pageName, pageContent }) => (
   <>
+    <Head>
+      <title>{pageTitle}</title>
+      <meta name={pageName} content={pageContent} />
+    </Head>
+
     <div className="page-container">
       <div
         className="roses"

@@ -12,7 +12,12 @@ const Article = ({ article, categories }) => {
   const router = useRouter();
 
   return (
-    <Layout categories={categories.data}>
+    <Layout
+      categories={categories.data}
+      pageContent={`Blog post | ${article.attributes.title}`}
+      pageTitle={`Blog post | ${article.attributes.title}`}
+      pageName={`Fullstakk AS – ${article.attributes.name}`}
+    >
       <div className="topbar">
         <i className="fa-solid fa-xmark" onClick={() => router.back()}></i>
       </div>

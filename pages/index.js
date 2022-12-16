@@ -1,13 +1,17 @@
 import Layout from "../components/layout";
 import { fetchAPI } from "../lib/api";
-import Articles from "../components/articles";
+import Card from "../components/card";
 import Link from "next/link";
 import Logo_l from "../components/logo_l";
 import Logo_s from "../components/logo_s";
 
 const Home = ({ articles, categories }) => {
   return (
-    <Layout>
+    <Layout
+      pageTitle="Paal's portfolio | Home"
+      pageContent="This is Paal Aleksander Kaasa's portfolio."
+      pageName="Fullstakk AS – paal's portfolio"
+    >
       <div className="section">
         <div className="container intro">
           <div className="intro-container">
@@ -133,7 +137,13 @@ const Home = ({ articles, categories }) => {
                 backgroundImage: `url(${"/page-break.png"})`,
               }}
             ></div>
-            <Articles articles={articles} />
+            <div className="blog-excerpt">
+              {articles.map((article, i) => {
+                return (
+                  <Card article={article} key={`${article.attributes.slug}`} />
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>

@@ -1,10 +1,9 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
-// import NextImage from "./image"
 
 const Card = ({ article }) => {
-  // console.log(homepage)
+  const MAX_LENGTH = 200;
+
   return (
     <Link href={`/article/${article.attributes.slug}`}>
       <a className="article-href">
@@ -17,7 +16,6 @@ const Card = ({ article }) => {
         <header>
           <h2>{article.attributes.title}</h2>
           <div>
-            {console.log(article)}
             {article.attributes.categories.data.map((cat, i) => {
               return (
                 <span className="mini-badge" key={i}>
@@ -26,7 +24,8 @@ const Card = ({ article }) => {
               );
             })}
           </div>
-          <p>{article.attributes.description}</p>
+
+          <p>{article.attributes.content.substring(0, MAX_LENGTH) + "..."}</p>
         </header>
       </a>
     </Link>
