@@ -1,34 +1,67 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Paal's portfolio | www.fullstakk.as
+
+![image](https://res.cloudinary.com/paalaleks/image/upload/v1671388770/Screenshot_2022-12-18_at_19.38.36_ckw2b2.png)
+
+## Description
+
+This is my portfolio with a few projects uploaded. I've set it up with a few advanced features that will make it easeier for the visitor to see undertsand my knowledge level as a developer. I also uploaded some of my artwork here.
+
+
+- Next.js is used to make the webpage seo friendly and run effeciently with static page rendering.
+– SASS is used throughout this project in order to make the CSS developer experience better and web browser compatability better. 
+– Starpi is used as CMS to som I can have a CMS for the portfolio and all the other demo projects. The back-end is uploaded to Heroku and is running as a posgreSQL database.
+
+## Built With
+
+You can list a the tech stack that you've used over here
+
+- [Next.js](https://nextjs.org/)
+- [SASS](https://sass-lang.com/)
+- [Strapi](https://strapi.io)
+- [Vercel](https://vercel.com)
+– [Heroku](https://heroku.com)
+– [Postgress](http://postgressql.org)
 
 ## Getting Started
 
-First, run the development server:
+### Installing
+
+Clone the repo with the following commands:
+
+1. Clone the repo:
 
 ```bash
-npm run dev
-# or
-yarn dev
+git clone https://github.com/paalaleks/animated-octo-waddle.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install the dependencies:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```
+npm install
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### Running
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+After you cloned and installed the dependencies you can run the app locally on port http://localhost:3000
 
-## Learn More
+To run the app, run the following commands:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Check out the deployed webpage
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+[https://www.fullstakk.as](https://www.fullstakk.as)
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contact
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
+
+[Email me for requests you might have](mailto:paalaleks@hotmail.com)
+
+[Or find me on LinkedIn](www.linkedin.com/in/fullstakk)
+
+
+
