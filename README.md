@@ -13,8 +13,6 @@ This is my portfolio with a few projects uploaded. I've set it up with a few adv
 
 ## Built With
 
-You can list a the tech stack that you've used over here
-
 - [Next.js](https://nextjs.org/)
 - [SASS](https://sass-lang.com/)
 - [Strapi](https://strapi.io/)
