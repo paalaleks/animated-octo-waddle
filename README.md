@@ -17,10 +17,10 @@ You can list a the tech stack that you've used over here
 
 - [Next.js](https://nextjs.org/)
 - [SASS](https://sass-lang.com/)
-- [Strapi](https://strapi.io)
-- [Vercel](https://vercel.com)
-– [Heroku](https://heroku.com)
-– [Postgress](http://postgressql.org)
+- [Strapi](https://strapi.io/)
+- [Vercel](https://vercel.com/)
+– [Heroku](https://heroku.com/)
+– [Postgress](http://postgressql.org/)
 
 ## Getting Started
 
